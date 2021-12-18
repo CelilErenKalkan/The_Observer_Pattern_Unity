@@ -2,7 +2,7 @@
 using UnityEngine.Events;
 
 [System.Serializable]
-public class UnityGameObjectEvent : UnityEvent<GameObject>{ }
+public class UnityGameObjectEvent : UnityEvent<GameObject> { }
 
 public class EventListener : MonoBehaviour
 {
@@ -16,7 +16,7 @@ public class EventListener : MonoBehaviour
 
     private void OnDisable()
     {
-        gEvent.UnRegister(this);
+        gEvent.Unregister(this);
     }
 
     public void OnEventOccurs(GameObject go)

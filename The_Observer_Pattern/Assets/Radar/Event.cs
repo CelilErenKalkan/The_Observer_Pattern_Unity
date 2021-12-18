@@ -1,27 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Event", menuName = "Game Event", order = 52)]
 public class Event : ScriptableObject
 {
-    private List<EventListener> eListeners = new List<EventListener>();
+    private List<EventListener> elisteners = new List<EventListener>();
 
     public void Register(EventListener listener)
     {
-        eListeners.Add(listener);
+        elisteners.Add(listener);
     }
 
-    public void UnRegister(EventListener listener)
+    public void Unregister(EventListener listener)
     {
-        eListeners.Remove(listener);
+        elisteners.Remove(listener);
     }
 
-    public void Occured(GameObject go)
+    public void Occurred(GameObject go)
     {
-        for (int i = 0; i < eListeners.Count; i++)
+        for (int i = 0; i < elisteners.Count; i++)
         {
-            eListeners[i].OnEventOccurs(go);
+            elisteners[i].OnEventOccurs(go);
         }
     }
 }

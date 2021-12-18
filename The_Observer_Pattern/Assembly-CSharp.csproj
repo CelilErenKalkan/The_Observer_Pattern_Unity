@@ -62,10 +62,13 @@
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\WorldManager.cs" />
     <Compile Include="Assets\Scripts\SetPlantInfo.cs" />
+    <Compile Include="Assets\Radar\Egg.cs" />
+    <Compile Include="Assets\Radar\EventListener.cs" />
     <Compile Include="Assets\Radar\Radar.cs" />
     <Compile Include="Assets\Radar\Spawner.cs" />
+    <Compile Include="Assets\Radar\Item.cs" />
     <Compile Include="Assets\Radar\Event.cs" />
-    <Compile Include="Assets\Radar\EventListener.cs" />
+    <Compile Include="Assets\Radar\MessageController.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\3D Game Kit - Environment Pack\Shaders\Vegetation.shader" />
